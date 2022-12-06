@@ -1,6 +1,6 @@
 Day 1 - pandas is nice, there is probably a command that does what you are looking to do
 Day 2 - use def for repetitive things and to keep code tidy
-Day 3 - refresher on lists and ascii
+Day 3 - refresher on lists, remembered ascii is convenient, break command only does the deepest level!
 Day 4 - .index is a great command, use pen and paper to plan ahead rather than fumbling around, careful with random break/continue statements from debugging
 Day 5 - refresher on list of lists, learned about copies (soft/deep) and how they interact with variables, careful with -1 in the index (also -1: is a cool trick)
 Day 6 - 
