@@ -1,3 +1,4 @@
+Lessons Learned
 Day 1 - pandas is nice, there is probably a command that does what you are looking to do
 Day 2 - use def for repetitive things and to keep code tidy
 Day 3 - refresher on lists, remembered ascii is convenient, break command only does the deepest level!
