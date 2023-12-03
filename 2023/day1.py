@@ -26,7 +26,7 @@ with open('day1_input.txt', 'r') as file:
     text2num = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
     nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
-    while True:
+    while False:  # turned off -- see day1_part2.py
         line = file.readline()
         if not line:
             break
@@ -64,12 +64,12 @@ with open('day1_input.txt', 'r') as file:
                         cal_vals[-1] = int(str(cal_vals[-1]) + str(text2num.index(tnum)))
                     else:
                         pass
-    print(len(strip_list), strip_list)
-    print(len(cal_vals), cal_vals)
+    #print(len(strip_list), strip_list)
+    #print(len(cal_vals), cal_vals)
     print('part 2 = ', sum(cal_vals))
     check = []
     for i in range(0, len(strip_list)):
         check.append([strip_list[i], cal_vals[i]])
     import pprint
-    pprint.pprint(check)
+    #pprint.pprint(check)
 

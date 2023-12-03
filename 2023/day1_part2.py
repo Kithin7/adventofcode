@@ -32,22 +32,27 @@ with open('day1_input.txt', 'r') as file:
                 pass
             else:
                 if stripped.index(text2num[i]) < first:
-                    first = i
-                if stripped.index(text2num[i]) > last:
-                    last = i
+                    first = stripped.index(text2num[i])
+                    first_val = i
+                if stripped.rindex(text2num[i]) > last:
+                    last = stripped.rindex(text2num[i])
+                    last_val = i
             # check for num
             try:
-                stripped.index(nums[i])
+                stripped.rindex(nums[i])
             except ValueError:
                 pass
             else:
                 if stripped.index(nums[i]) < first:
-                    first = i
-                if stripped.index(nums[i]) > last:
-                    last = i
+                    first = stripped.index(nums[i])
+                    first_val = i
+                if stripped.rindex(nums[i]) > last:
+                    last = stripped.rindex(nums[i])
+                    last_val = i
 
-        cal_vals.append(int(str(first) + str(last)))
+        cal_vals.append(int(str(first_val) + str(last_val)))
+        print(strip_list[-1])
+        print(cal_vals[-1])
 
-    print(strip_list)
-    print(cal_vals)
+
     print('part 2 = ', sum(cal_vals))
