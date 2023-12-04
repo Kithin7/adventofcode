@@ -4,7 +4,7 @@ Day 1 - harder than i was expecting for the first day. Made me think a lot. disc
 
 Day 2 - feels good when it works first try :) (after debugging lol)
 
-Day 3 - 
+Day 3 - I CAN'T FIND THE PROBLEM :( my answer 532401 is too low 
 
 Day 4 - 
 
