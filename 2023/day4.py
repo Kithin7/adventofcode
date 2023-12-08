@@ -54,7 +54,6 @@ with open('day4_input.txt', 'r') as file:
 print('matches:', cards)
 
 
-
 def propagate(prop_list: list):
     counting_list = [1] * len(prop_list)  # list of 1s, used to count copies of each (index +1 = card#)
     for i in range(len(prop_list)):  # iter over list
@@ -64,6 +63,7 @@ def propagate(prop_list: list):
                 counting_list[i+j+1] += 1  # index of card + reach + 1 bc index starts at 0
 
     return counting_list
+
 
 import timeit
 print(timeit.timeit('int(sum(propagate(cards)))', setup="from __main__ import propagate", globals=globals(), number=1))
