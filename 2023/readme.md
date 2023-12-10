@@ -10,7 +10,7 @@ Day 4 - counting copies this was fun
 
 Day 5 - first attempt ran for so long i had to kill it bc i forgot a break statement. also remember to fix obj types first otherwise crap in, crap out. part 2 is like part one but another level deeper...
 
-Day 6 - 
+Day 6 - solving parabolas ezpz
 
 Day 7 - 
 
