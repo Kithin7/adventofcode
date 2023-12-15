@@ -8,7 +8,7 @@ import pprint
 # assumptions:
     # looks like double-counting shouldn't be an issue? -> no nums adj to more than 1 special
     # edges are clear of specials, but not nums
-    # nums are all unique? or at least, one special doesn't touch two exact same nums
+    # one special doesn't touch two exact same nums
     # nums are 1-3 digits
 # plan:
     # scan each row                                                 >>> for loop [row]
@@ -48,8 +48,8 @@ for char_ in ('.', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'):
 #print('specials present: ', special_check)
 
 # scanning row(y) and col(x)
-for row in range(1, len(schematic)-1):
-    for col in range(1, len(schematic[row])-1):
+for row in range(0, len(schematic)-0):
+    for col in range(0, len(schematic[row])-0):
         if schematic[row][col] in special_chars:  # detect special
             # now search in 8 directions
             adj_nums = set()  # set of nums adj to search origin, return at end of loop
@@ -82,10 +82,11 @@ for row in range(1, len(schematic)-1):
                         elif not schematic[search_row][right_index].isnumeric():  # not num
                             right_index -= 1  # nudge back left
                             break
-                    #print(schematic[row][col], row, col, search_row, schematic[search_row][left_index:search_col])
+                    #print(schematic[row][col], row, schematic[search_row][left_index:right_index])
 
                     # add num to set (for specific special)
                     adj_nums.add(int(schematic[search_row][left_index:right_index+1]))
+                    print(row, schematic[row][col], adj_nums)
 
             list_adj_nums.append(adj_nums)  # list of sets
             #debug_row_adj_nums
@@ -97,9 +98,6 @@ for row in range(1, len(schematic)-1):
             dif_list.append(item)
     #print(dif_list)
     copy_list = copy.deepcopy(list_adj_nums)
-
-
-
 
     #pprint.pprint(debug_alladjnums)
 #print(list_adj_nums)

@@ -1,17 +1,18 @@
-# day X
+# day x
 # part 1
-with open('day2_input.txt', 'r') as file:
+## objective of puzzle
+## planning
+print('Part 1')
+# initialize stuff here
 
-    # initialize stuff here
-
+with open('day#_input.txt', 'r') as file:
     while True:
         line = file.readline()
         if not line:
             break
 
-        # do stuff here
-
-    print('Part 1')
-    print('Sum of things: ', sum(thing_list))
+# do stuff here
+print('Thing: ', sum(0))
 
 # part 2
+print('Part 2')
